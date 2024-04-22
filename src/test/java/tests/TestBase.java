@@ -34,7 +34,7 @@ public class TestBase {
             case "browserstack":
                 Configuration.browser = BrowserstackDriver.class.getName();
                 break;
-            case "emulation", "real":
+            case "emulation":
                 Configuration.browser = LocalMobileDriver.class.getName();
                 break;
             default:
