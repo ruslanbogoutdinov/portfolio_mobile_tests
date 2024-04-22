@@ -15,11 +15,10 @@ import pageobjects.MainPagePO;
 import pageobjects.SavedPO;
 import pageobjects.SearchPO;
 
-
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class TestBase {
+public class BaseTest {
     public static String deviceHost = System.getProperty("deviceHost");
     MainPagePO mainPagePO = new MainPagePO();
     SearchPO searchPO = new SearchPO();
@@ -31,16 +30,13 @@ public class TestBase {
         Configuration.browserSize = null;
 
         switch (deviceHost) {
-//            case "browserstack" -> Configuration.browser = BrowserstackDriver.class.getName();
-//            case "emulation", "real" -> Configuration.browser = LocalMobileDriver.class.getName();
             case "browserstack":
                 Configuration.browser = BrowserstackDriver.class.getName();
+                break;
             case "emulation":
-                Configuration.browser = LocalMobileDriver.class.getName();
             case "real":
                 Configuration.browser = LocalMobileDriver.class.getName();
-            default:
-                return;
+                break;
         }
     }
 

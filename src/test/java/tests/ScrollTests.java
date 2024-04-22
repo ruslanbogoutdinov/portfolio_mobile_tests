@@ -3,11 +3,13 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import tests.annotations.Layer;
 
 import static io.qameta.allure.Allure.step;
 
+@Layer("mobile tests")
 @Feature("Открытие статей путем скрола")
-public class ScrollTests extends TestBase {
+public class ScrollTests extends BaseTest {
     private static final String
             searchArticleTitle = "Java",
             searchArticleTitleInFoundList = "Java applet";

@@ -3,11 +3,13 @@ package tests;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import tests.annotations.Layer;
 
 import static io.qameta.allure.Allure.step;
 
+@Layer("mobile tests")
 @Feature("Проверка поиска статей")
-public class SearchTests extends TestBase {
+public class SearchTests extends BaseTest {
     private static final String searchArticleTitle = "Java";
     @Test
     @Story("Поиск через поисковое поле")

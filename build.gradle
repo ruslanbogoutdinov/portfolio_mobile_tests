@@ -34,7 +34,6 @@ allure {
 dependencies {
     testImplementation (
             "com.codeborne:selenide:$selenideVersion",
-            // для скрола
             "com.codeborne:selenide-appium:6.15.0",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.appium:java-client:$appiumJavaClientVersion",
@@ -57,12 +56,4 @@ tasks.withType(Test) {
             exceptionFormat "short"
         }
     }
-}
-
-// DELETE
-task test1(type : Test){
-    useJUnitPlatform{
-        includeTags("test1")
-    }
-    systemProperties(System.getProperties())
 }
