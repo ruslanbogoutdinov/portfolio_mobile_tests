@@ -28,6 +28,8 @@ public class TestBase {
 
     @BeforeAll
     static void setUp() {
+        Configuration.browserSize = null;
+
         switch (deviceHost) {
 //            case "browserstack" -> Configuration.browser = BrowserstackDriver.class.getName();
 //            case "emulation", "real" -> Configuration.browser = LocalMobileDriver.class.getName();
@@ -40,7 +42,6 @@ public class TestBase {
             default:
                 return;
         }
-        Configuration.browserSize = null;
     }
 
     @BeforeEach
