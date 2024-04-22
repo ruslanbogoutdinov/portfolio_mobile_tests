@@ -7,12 +7,12 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Feature("Раздел с сохраненными статьями")
 public class SavedTests extends TestBase {
     public String savedNavButtonState;
     public static final String listTitle = "My first saved list";
     @Test
-    @Feature("Issue в репозитории")
-    @Story("Создание Issue")
+    @Story("Открытие раздела со статьями")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)
     @DisplayName("Проверка на корректное открытие раздела 'Saved' в нижнем боттом баре")
@@ -26,8 +26,7 @@ public class SavedTests extends TestBase {
     }
 
     @Test
-    @Feature("Issue в репозитории")
-    @Story("Создание Issue")
+    @Story("Создание статьи")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)
     @DisplayName("Создание нового списка с сохраненными статьями")

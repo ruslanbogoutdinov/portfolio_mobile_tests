@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
+@Feature("Проверка поиска статей")
 public class SearchTests extends TestBase {
     private static final String searchArticleTitle = "Java";
     @Test
-    @Feature("Issue в репозитории")
-    @Story("Создание Issue")
+    @Story("Поиск через поисковое поле")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка на успешный поиск статьи через поисковое поле")
@@ -25,8 +25,7 @@ public class SearchTests extends TestBase {
     }
 
     @Test
-    @Feature("Issue в репозитории")
-    @Story("Создание Issue")
+    @Story("Открытие статьи путем поиска через поисковое поле")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка на успешное открытие найденной статьи путём поиска через поисковое поле")
