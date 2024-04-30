@@ -2,7 +2,6 @@ package tests;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tests.annotations.Layer;
 
@@ -47,7 +46,7 @@ public class SettingsTests extends TestBase{
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)
     @DisplayName("Удаление выбранного языка при помощи лонг-тапа")
-    void test1() {
+    void deleteAddedLanguageWithLongTap() {
         step("Добавляем язык и совершаем лонг-тап для подготовки к удалению", () -> {
             moreFramePO.openMoreFrame();
             settingsPO.openSettingsPage()

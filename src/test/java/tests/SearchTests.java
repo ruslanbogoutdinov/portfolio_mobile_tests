@@ -4,7 +4,6 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.annotations.Layer;
-import tests.annotations.Manual;
 
 import static io.qameta.allure.Allure.step;
 
