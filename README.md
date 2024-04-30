@@ -32,7 +32,7 @@
 ### Локальный запуск тестов
 
 ```
-gradle clean test "-DdeviceHost=local"  
+gradle clean test "-DdeviceHost=local"
 ```
 
 ### Удаленный запуск тестов
