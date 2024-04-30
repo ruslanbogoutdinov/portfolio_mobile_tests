@@ -1,4 +1,4 @@
-<h1>Демо-проект по автоматизации тестирования мобильного приложения Wikipedia</h1>
+# Демо-проект по автоматизации тестирования мобильного приложения Wikipedia
 
 <a><img src="src/test/resources/media/images/wiki_logo.jpg" alt="Wikipedia"/></a>
 
@@ -13,8 +13,6 @@
 * <a href="#allure">Allure Report отчеты</a>
 
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
-
-* <a href="#jira">Интеграция с Jira</a>
 
 * <a href="#telegram">Telegram уведомления</a>
 
