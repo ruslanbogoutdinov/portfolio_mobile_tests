@@ -14,6 +14,7 @@ def appiumJavaClientVersion = "8.3.0",
     junitJupiterVersion = "5.9.2",
     ownerVersion = "1.0.4",
     restAssuredVersion = "5.3.0",
+    selenideAppiumVersion = "7.2.3",
     selenideVersion = "6.13.0",
     slf4jVersion = "2.0.7"
 
@@ -33,8 +34,7 @@ allure {
 
 dependencies {
     testImplementation (
-            "com.codeborne:selenide:$selenideVersion",
-            "com.codeborne:selenide-appium:6.15.0",
+            //"com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.appium:java-client:$appiumJavaClientVersion",
             "io.rest-assured:rest-assured:$restAssuredVersion",
@@ -42,7 +42,8 @@ dependencies {
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "commons-io:commons-io:$commonsVersion",
-            "org.assertj:assertj-core:$assertJVersion"
+            "org.assertj:assertj-core:$assertJVersion",
+            "com.codeborne:selenide-appium:$selenideAppiumVersion"
     )
 }
 
@@ -55,5 +56,11 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
+    }
+}
+
+task test1(type : Test){
+    useJUnitPlatform{
+        includeTags("test1")
     }
 }

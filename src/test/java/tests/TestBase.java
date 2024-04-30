@@ -10,25 +10,21 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
-import pageobjects.ArticlePO;
-import pageobjects.MainPagePO;
-import pageobjects.SavedPO;
-import pageobjects.SearchPO;
+import pageobjects.*;
 
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class BaseTest {
+public class TestBase {
     public static String deviceHost = System.getProperty("deviceHost");
-    MainPagePO mainPagePO = new MainPagePO();
     SearchPO searchPO = new SearchPO();
     ArticlePO articlePO = new ArticlePO();
     SavedPO savedPO = new SavedPO();
+    MoreFramePO moreFramePO = new MoreFramePO();
+    SettingsPO settingsPO = new SettingsPO();
 
     @BeforeAll
-    static void setUp() {
-        Configuration.browserSize = null;
-
+    static void beforeAll() {
         switch (deviceHost) {
             case "browserstack":
                 Configuration.browser = BrowserstackDriver.class.getName();
@@ -38,6 +34,7 @@ public class BaseTest {
                 Configuration.browser = LocalMobileDriver.class.getName();
                 break;
         }
+        Configuration.browserSize = null;
     }
 
     @BeforeEach

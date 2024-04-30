@@ -15,18 +15,6 @@ public class SearchPO {
 
     private static final ElementsCollection
             searchFoundItemList = $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title"));
-    /**
-     * Переменные / методы, в названии которых присутствует постфиксы 'TPL'
-     * помогают формировать нужные данные на лету.
-     */
-
-    private static final String articleTitleInSearchFoundListTPL = "//*[@text='{SUBSTRING}']";
-
-    private static SelenideElement getNeededArticleInSearchFoundListTPL(String substring) {
-        String neededArticleTitle = articleTitleInSearchFoundListTPL.replace("{SUBSTRING}", substring);
-
-        return $(AppiumBy.xpath(neededArticleTitle));
-    }
 
     public SearchPO enterValueIntoSearchField(String value){
         searchField.click();
@@ -35,21 +23,14 @@ public class SearchPO {
         return this;
     }
 
-    public SearchPO verifyAmountOfFoundItemsInSearchList(){
-        $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title"))
-                .shouldHave(sizeGreaterThan(0));
+    public SearchPO verifyAmountOfFoundItemsInSearchList(int value){
+        searchFoundItemList.shouldHave(sizeGreaterThan(value));
 
         return this;
     }
 
     public SearchPO selectNeededArticleInSearchFoundList(int itemOrder){
         searchFoundItemList.get(itemOrder).click();
-
-        return this;
-    }
-
-    public SearchPO scrollToNeededArticleInSearchFoundList(String value){
-        getNeededArticleInSearchFoundListTPL(value).scrollTo();
 
         return this;
     }

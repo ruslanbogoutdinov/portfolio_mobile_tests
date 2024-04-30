@@ -10,7 +10,5 @@ import java.lang.annotation.*;
 @Target({ElementType.METHOD, ElementType.TYPE})
 @LabelAnnotation(name = "layer")
 public @interface Layer {
-
     String value();
-
 }

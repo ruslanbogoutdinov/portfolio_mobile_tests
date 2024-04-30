@@ -4,12 +4,15 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.annotations.Layer;
+import tests.annotations.Manual;
 
 import static io.qameta.allure.Allure.step;
 
 @Layer("mobile tests")
 @Feature("Проверка поиска статей")
-public class SearchTests extends BaseTest {
+public class SearchTests extends TestBase {
+    int amountOfFoundItems = 0,
+        numberOfNeededItemInFoundItemsArray = 0;
     private static final String searchArticleTitle = "Java";
     @Test
     @Story("Поиск через поисковое поле")
@@ -22,7 +25,7 @@ public class SearchTests extends BaseTest {
         );
 
         step("Проверка на то, что в списке найденных элементов, есть хотя бы одно значение", () ->
-                searchPO.verifyAmountOfFoundItemsInSearchList()
+                searchPO.verifyAmountOfFoundItemsInSearchList(amountOfFoundItems)
         );
     }
 
@@ -37,7 +40,7 @@ public class SearchTests extends BaseTest {
         );
 
         step("Выбираем первую найденную статью из списка и проверяем что страница со статьей открылась корректно", () -> {
-            searchPO.selectNeededArticleInSearchFoundList(0);
+            searchPO.selectNeededArticleInSearchFoundList(numberOfNeededItemInFoundItemsArray);
             articlePO.verifyArticlePageOpens();
         });
     }

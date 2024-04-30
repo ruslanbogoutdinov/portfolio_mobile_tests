@@ -20,11 +20,11 @@ public interface BrowserstackConfig extends Config {
     String getApp();
 
     @Key("device")
-    @DefaultValue("Google Pixel 3")
+    @DefaultValue("Samsung Galaxy S22 Ultra")
     String getDevice();
 
     @Key("os_version")
-    @DefaultValue("9.0")
+    @DefaultValue("12.0")
     String getOSVersion();
 
     @Key("project")
@@ -32,7 +32,7 @@ public interface BrowserstackConfig extends Config {
     String getProjectName();
 
     @Key("build")
-    @DefaultValue("browserstack-build-2")
+    @DefaultValue("browserstack-build-1")
     String getBuildName();
 
     @Key("name")

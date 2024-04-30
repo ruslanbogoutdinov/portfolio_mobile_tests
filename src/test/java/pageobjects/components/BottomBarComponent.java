@@ -20,4 +20,10 @@ public class BottomBarComponent {
         return $(AppiumBy.id("org.wikipedia.alpha:id/navigation_bar_item_large_label_view"))
                 .shouldHave(text(itemTitle)).getAttribute(attribute);
     }
+
+    public BottomBarComponent openNeededMenuInBar(String item){
+        $(AppiumBy.accessibilityId(item)).click();
+
+        return this;
+    }
 }

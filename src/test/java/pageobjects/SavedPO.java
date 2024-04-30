@@ -20,7 +20,7 @@ public class SavedPO {
         listItemTitle = $(AppiumBy.id("org.wikipedia.alpha:id/item_title"));
 
     public SavedPO openSavedPage(){
-        bottomBarComponent.openNeededBarItem("Saved");
+        bottomBarComponent.openNeededMenuInBar("Saved");
 
         return this;
     }
@@ -29,16 +29,16 @@ public class SavedPO {
         return bottomBarComponent.getNeededActiveBarItemState("Saved", attribute);
     }
 
-    public SavedPO openMoreOptionsFrameAndVerifyItOpens(){
-        moreOptions.click();
-        moreOptionsContainer.shouldBe(enabled);
+    public SavedPO clickOnOpenNewListItemAndVerifyItOpens(){
+        moreOptionsCreateNewListItem.click();
+        moreOptionsCreateNewListFrame.shouldBe(enabled);
 
         return this;
     }
 
-    public SavedPO clickOnOpenNewListItemAndVerifyItOpens(){
-        moreOptionsCreateNewListItem.click();
-        moreOptionsCreateNewListFrame.shouldBe(enabled);
+    public SavedPO openMoreOptionsFrameAndVerifyItOpens(){
+        moreOptions.click();
+        moreOptionsContainer.shouldBe(enabled);
 
         return this;
     }

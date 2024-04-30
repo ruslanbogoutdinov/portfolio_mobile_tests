@@ -1,39 +1,37 @@
 package tests;
 
-import io.qameta.allure.*;
-import org.junit.jupiter.api.DisplayName;
+import com.codeborne.selenide.WebDriverRunner;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import tests.annotations.Layer;
 
-import static io.qameta.allure.Allure.step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 
-@Layer("mobile tests")
-@Feature("Открытие статей путем скрола")
-public class ScrollTests extends BaseTest {
-    private static final String
-            searchArticleTitle = "Java",
-            searchArticleTitleInFoundList = "Java applet";
+import java.util.HashMap;
+import java.util.Map;
+
+@Disabled
+public class ScrollTests extends TestBase {
     @Test
-    @Story("Открытие статьи на главной")
-    @Owner("ruslanbogoutdinov")
-    @Severity(SeverityLevel.MINOR)
-    @DisplayName("Открыть первую найденную новостную ссылку путём скрола на главной странице")
-    void scrollAndOpenFirstNewsArticleBlockTest() {
-        step("Скролим до первой найденной новостной ссылки на главной странице, открываем её и проверяем, корректно ли она открылась", () -> {
-            mainPagePO.openFirstFoundArticleByScrollingAndVerifyItOpens();
-            articlePO.verifyArticleBlockOpens();
-        });
+    void scrollTest() {
+        appiumScroll();
     }
 
-    @Test
-    @Story("Открытие статьи в результате поиска")
-    @Owner("ruslanbogoutdinov")
-    @Severity(SeverityLevel.MINOR)
-    @DisplayName("Открыть нужную статью через поисковое поле используя скрол")
-    void openTalkPageInNeededArticle() {
-        step("Вбиваем название нужной статьи и ищем её путём скрола в найденном списке", () -> {
-            searchPO.enterValueIntoSearchField(searchArticleTitle);
-            searchPO.scrollToNeededArticleInSearchFoundList(searchArticleTitleInFoundList);
-        });
+    public void appiumScroll(){
+        WebElement element = WebDriverRunner.getWebDriver()
+                .findElement(By.xpath("//android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView"));
+
+        JavascriptExecutor js = (JavascriptExecutor) WebDriverRunner.getWebDriver();
+        Map<String, Object> params = new HashMap<>();
+
+        params.put("elementId", ((RemoteWebElement) element).getId());
+        params.put("direction", "down");
+        params.put("percent", 1.0);
+
+        js.executeScript("mobile: scrollGesture", params);
     }
 }

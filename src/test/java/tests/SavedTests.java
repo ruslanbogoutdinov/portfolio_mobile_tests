@@ -2,6 +2,7 @@ package tests;
 
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import tests.annotations.Layer;
 
@@ -10,7 +11,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Layer("mobile tests")
 @Feature("Раздел с сохраненными статьями")
-public class SavedTests extends BaseTest {
+public class SavedTests extends TestBase {
     public String savedNavButtonState;
     public static final String listTitle = "My first saved list";
     @Test
