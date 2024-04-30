@@ -1,6 +1,6 @@
 <h1>Демопроект по автоматизации тестирования мобильного приложения Wikipedia</h1>
 
-![WB_logo.jpg](media/logo/WB_logo.jpg)
+<a><img src="/images/wiki_logo.jpg" alt="Wikipedia"/></a>
 
 ## Содержание
 
