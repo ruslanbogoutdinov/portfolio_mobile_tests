@@ -34,7 +34,7 @@ allure {
 
 dependencies {
     testImplementation (
-            //"com.codeborne:selenide:$selenideVersion",
+            "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.appium:java-client:$appiumJavaClientVersion",
             "io.rest-assured:rest-assured:$restAssuredVersion",
@@ -43,7 +43,8 @@ dependencies {
             "org.aeonbits.owner:owner:$ownerVersion",
             "commons-io:commons-io:$commonsVersion",
             "org.assertj:assertj-core:$assertJVersion",
-            "com.codeborne:selenide-appium:$selenideAppiumVersion"
+            // решить на стороне Browserstack
+            //"com.codeborne:selenide-appium:$selenideAppiumVersion"
     )
 }
 

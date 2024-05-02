@@ -51,12 +51,15 @@ public class SettingsTests extends TestBase{
             moreFramePO.openMoreFrame();
             settingsPO.openSettingsPage()
                     .openAddLanguagePage()
-                    .chooseNeededLanguage(languageItemOnRussian)
-                    .longPressOnNeededLanguageItem(languageItemOnEnglish);
+                    .chooseNeededLanguage(languageItemOnRussian);
+                    //.longPressOnNeededLanguageItem(languageItemOnEnglish);
         });
 
         step("Удаляем ранее добавленный язык", () -> {
-            settingsPO.deleteNeededLanguageByClickingOnBinButton(languageItemOnEnglish);
+            settingsPO.openMoreOptionsFrame()
+                    .selectNeededItemInMoreOptionsMenu("Remove language")
+                    .selectRecentAddedLanguageCheckbox()
+                    .deleteNeededLanguageByClickingOnBinButton(languageItemOnEnglish);
         });
     }
 }

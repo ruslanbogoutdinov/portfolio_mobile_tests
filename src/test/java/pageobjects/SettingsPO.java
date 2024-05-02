@@ -1,17 +1,24 @@
 package pageobjects;
 
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.appium.java_client.AppiumBy;
 import pageobjects.components.UniversalActionsComponent;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class SettingsPO {
     UniversalActionsComponent universalActionsComponent = new UniversalActionsComponent();
     private static final SelenideElement
         settingsButtonInMoreFrame = $(AppiumBy.id("org.wikipedia.alpha:id/main_drawer_settings_container")),
         backButton = $(AppiumBy.accessibilityId("Navigate up")),
-        deleteButton = $(AppiumBy.id("org.wikipedia.alpha:id/menu_delete_selected"));
+        deleteButton = $(AppiumBy.id("org.wikipedia.alpha:id/menu_delete_selected")),
+        moreOptionsButton = $(AppiumBy.accessibilityId("More options"));
+
+    private static final ElementsCollection
+            listOfAddedLanguages = $$(AppiumBy.id("org.wikipedia.alpha:id/wiki_language_checkbox"));
+
 
     public SettingsPO openSettingsPage(){
         settingsButtonInMoreFrame.click();
@@ -46,16 +53,34 @@ public class SettingsPO {
         return this;
     }
 
-    public SettingsPO longPressOnNeededLanguageItem(String language){
-        universalActionsComponent.longPressByUniversalTpl(language);
-
-        return this;
-    }
+//    public SettingsPO longPressOnNeededLanguageItem(String language){
+//        universalActionsComponent.longPressByUniversalTpl(language);
+//
+//        return this;
+//    }
 
     public SettingsPO deleteNeededLanguageByClickingOnBinButton(String language){
         deleteButton.click();
         universalActionsComponent.clickByUniversalTplItem("OK");
         universalActionsComponent.verifyItemShouldNotExistByUniversalTpl(language);
+
+        return this;
+    }
+
+    public SettingsPO openMoreOptionsFrame(){
+        moreOptionsButton.click();
+
+        return this;
+    }
+
+    public SettingsPO selectNeededItemInMoreOptionsMenu(String item){
+        universalActionsComponent.clickByUniversalTplItem(item);
+
+        return this;
+    }
+
+    public SettingsPO selectRecentAddedLanguageCheckbox(){
+        listOfAddedLanguages.last().click();
 
         return this;
     }

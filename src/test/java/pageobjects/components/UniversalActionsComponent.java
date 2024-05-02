@@ -5,7 +5,7 @@ import io.appium.java_client.AppiumBy;
 import static com.codeborne.selenide.Condition.enabled;
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.appium.AppiumClickOptions.longPress;
+//import static com.codeborne.selenide.appium.AppiumClickOptions.longPress;
 
 public class UniversalActionsComponent {
     private static final String
@@ -28,6 +28,6 @@ public class UniversalActionsComponent {
     }
 
     public void longPressByUniversalTpl(String item){
-        $(AppiumBy.xpath(getUniversalLocatorSubstring(item))).click(longPress());
+        //$(AppiumBy.xpath(getUniversalLocatorSubstring(item))).click(longPress());
     }
 }
