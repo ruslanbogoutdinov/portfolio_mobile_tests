@@ -1,6 +1,6 @@
 # Демо-проект по автоматизации тестирования мобильного приложения Wikipedia
 
-img title="Wikipedia" src="src/test/resources/media/images/WikiLogo.jpg" alt="Wikipedia"/>
+<img title="Wikipedia" src="src/test/resources/media/images/WikiLogo.jpg" alt="Wikipedia"/>
 
 ## Содержание
 
@@ -45,7 +45,7 @@ gradle clean test -DdeviceHost=browserstack
 #### Главная страница Jenkins
 
 <p align="center">
-<a><img title="Jenkins" src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/></a>
+<img title="Jenkins" src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/>
 
 > Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
 </p>
@@ -110,5 +110,5 @@ gradle clean test -DdeviceHost=browserstack
 ## <img src="src/test/resources/media/logos/Browserstack.svg" width="25" height="25"/></a> Видео пример прогона автотеста через BrowserStack
 
 <p align="center">
-  <img title="Browserstack video" src="src/test/resources/media/video/BrowserStackTestVideo.gif" alt="Browserstack video">
+<img title="Browserstack video" src="src/test/resources/media/video/BrowserStackTestVideo.gif" alt="Browserstack video">
 </p>
