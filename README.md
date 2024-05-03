@@ -1,6 +1,6 @@
 # Демо-проект по автоматизации тестирования мобильного приложения Wikipedia
 
-<a><img src="src/test/resources/media/images/wiki_logo.jpg" alt="Wikipedia"/></a>
+img title="Wikipedia" src="src/test/resources/media/images/WikiLogo.jpg" alt="Wikipedia"/>
 
 ## Содержание
 
@@ -45,7 +45,7 @@ gradle clean test -DdeviceHost=browserstack
 #### Главная страница Jenkins
 
 <p align="center">
-<a><img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/></a>
+<a><img title="Jenkins" src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/></a>
 
 > Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
 </p>
@@ -53,7 +53,7 @@ gradle clean test -DdeviceHost=browserstack
 #### Значки Allure Report и Allure TestOps
 
 <p align="center">
-<img src="src/test/resources/media/screenshots/AllureButtons.png" alt="Allure buttons in Jenkins">
+<img title="Allure buttons in Jenkins" src="src/test/resources/media/screenshots/AllureButtons.png" alt="Allure buttons in Jenkins">
 
 > Клик по иконкам <strong>*Allure TestOps*</strong> и <strong>*Allure Report*</strong> позволяет перейти
 > на просмотр страниц с тестовой документацией и отчетов.
@@ -65,19 +65,19 @@ gradle clean test -DdeviceHost=browserstack
 #### Главная страница Allure Report
 
 <p align="center">
-<img src="src/test/resources/media/screenshots/AllureReportMain.png">
+<img title="Allure Report overview" src="src/test/resources/media/screenshots/AllureReportMain.png" alt="Allure Report overview">
 </p>
 
 #### Тесты
 
 <p align="center">
-<img src="src/test/resources/media/screenshots/AllureTests.png">
+<img title="Allure Report tests" src="src/test/resources/media/screenshots/AllureTests.png" alt="Allure Report tests">
 </p>
 
 #### Графики
 
 <p align="center">
-<img src="src/test/resources/media/screenshots/AllureGraphs.png">
+<img title="Allure Report graphs" src="src/test/resources/media/screenshots/AllureGraphs.png" alt="Allure Report graphs">
 </p>
 
 <a id="allure-testops"></a>
@@ -88,13 +88,13 @@ gradle clean test -DdeviceHost=browserstack
 #### Тест-кейсы
 
 <p align="center">
-<img title="Allure TestOps" src="src/test/resources/media/screenshots/AllureTestOpsTests.png">
+<img title="Allure TestOps tests" src="src/test/resources/media/screenshots/AllureTestOpsTests.png" alt="Allure TestOps tests">
 </p>
 
 #### Дашборды
 
 <p align="center">
-<img title="Allure TestOps" src="src/test/resources/media/screenshots/AllureTestOpsDashboard.png">
+<img title="Allure TestOps dashboards" src="src/test/resources/media/screenshots/AllureTestOpsDashboards.png" alt="Allure TestOps dashboards">
 </p>
 
 <a id="telegram"></a>
@@ -103,12 +103,12 @@ gradle clean test -DdeviceHost=browserstack
 #### Оповещение о результатах сборки
 
 <p>
-<img title="Telegram bot" src="src/test/resources/media/screenshots/Telegram.png">
+<img title="Telegram notification" src="src/test/resources/media/screenshots/Telegram.png" alt="Telegram notification">
 </p>
 
 <a id="video"></a>
 ## <img src="src/test/resources/media/logos/Browserstack.svg" width="25" height="25"/></a> Видео пример прогона автотеста через BrowserStack
 
 <p align="center">
-  <img title="Browserstack Video" src="src/test/resources/media/video/BrowserStackTestVideo.gif">
+  <img title="Browserstack video" src="src/test/resources/media/video/BrowserStackTestVideo.gif" alt="Browserstack video">
 </p>
