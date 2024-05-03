@@ -85,8 +85,10 @@ gradle clean test -DdeviceHost=browserstack
 
 >Allure TestOps поддерживает подход <strong>*Test cases as a code*</strong>, что позволяет из кода поддерживать тестовую документацию в актуальном состоянии.
 
+#### Тест-кейсы
+
 <p align="center">
-<img title="Allure TestOps" src="media/screenshots/TOpsMobile1.png">
+<img title="Allure TestOps" src="media/screenshots/AllureTestOpsTests.png">
 </p>
 
 <p align="center">
