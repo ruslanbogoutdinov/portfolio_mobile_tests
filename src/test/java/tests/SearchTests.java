@@ -14,6 +14,7 @@ public class SearchTests extends TestBase {
         numberOfNeededItemInFoundItemsArray = 0;
     private static final String searchArticleTitle = "Java";
     @Test
+    @AllureId("31766")
     @Story("Поиск через поисковое поле")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.CRITICAL)
@@ -29,6 +30,7 @@ public class SearchTests extends TestBase {
     }
 
     @Test
+    @AllureId("31765")
     @Story("Открытие статьи путем поиска через поисковое поле")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.CRITICAL)

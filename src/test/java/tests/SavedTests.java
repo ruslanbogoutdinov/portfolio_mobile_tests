@@ -14,6 +14,7 @@ public class SavedTests extends TestBase {
     public String savedNavButtonState;
     public static final String listTitle = "My first saved list";
     @Test
+    @AllureId("31762")
     @Story("Открытие раздела со статьями")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)
@@ -28,6 +29,7 @@ public class SavedTests extends TestBase {
     }
 
     @Test
+    @AllureId("31761")
     @Story("Создание статьи")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)

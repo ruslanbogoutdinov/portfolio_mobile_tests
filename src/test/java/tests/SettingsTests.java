@@ -15,6 +15,7 @@ public class SettingsTests extends TestBase{
             languagesAfterAddingRussian = "English, русский";
 
     @Test
+    @AllureId("31962")
     @Story("Добавление языка")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)
@@ -42,6 +43,7 @@ public class SettingsTests extends TestBase{
     }
 
     @Test
+    @AllureId("31961")
     @Story("Настройка ленты")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)
