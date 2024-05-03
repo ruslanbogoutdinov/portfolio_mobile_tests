@@ -94,7 +94,7 @@ gradle clean test -DdeviceHost=browserstack
 #### Дашборды
 
 <p align="center">
-<img title="Allure TestOps" src="src/test/resources/media/screenshots/AllureTestOpsDashboard.png.png">
+<img title="Allure TestOps" src="src/test/resources/media/screenshots/AllureTestOpsDashboard.png">
 </p>
 
 <a id="telegram"></a>
