@@ -55,7 +55,7 @@ gradle clean test -DdeviceHost=browserstack
 <a id="allure"></a>
 ## <img src="media/logo/Allure.svg" width="25" height="25"/></a> [Allure Report](https://jenkins.autotests.cloud/job/AD_demo_mobile_wb/4/allure/) отчеты
 
-### Основное окно
+#### Значок Allure Report
 
 <p align="center">
 <img title="Allure Dashboard" src="media/screenshots/AllureMobile.png">

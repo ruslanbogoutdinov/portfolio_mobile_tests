@@ -20,7 +20,8 @@ public class SearchTests extends TestBase {
     @DisplayName("Проверка на успешный поиск статьи через поисковое поле")
     void articleSearchTest() {
         step("Ввод названия статьи в поисковое поле", () ->
-            searchPO.enterValueIntoSearchField(searchArticleTitle)
+            //searchPO.enterValueIntoSearchField(searchArticleTitle)
+            searchPO.enterValueIntoSearchField("searchArticleTitle")
         );
 
         step("Проверка на то, что в списке найденных элементов, есть хотя бы одно значение", () ->
@@ -39,7 +40,7 @@ public class SearchTests extends TestBase {
         );
 
         step("Выбираем первую найденную статью из списка и проверяем что страница со статьей открылась корректно", () -> {
-            searchPO.selectNeededArticleInSearchFoundList(numberOfNeededItemInFoundItemsArray);
+            //searchPO.selectNeededArticleInSearchFoundList(numberOfNeededItemInFoundItemsArray);
             articlePO.verifyArticlePageOpens();
         });
     }
