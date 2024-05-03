@@ -48,7 +48,7 @@ gradle clean test -DdeviceHost=browserstack
 
 <a><img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/></a>
 
-> Для запуска сборки необходимо нажать "Build now". Клик по иконкам Allure TestOps и Allure Report позволяет перейти
+> Для запуска сборки необходимо нажать <strong>*Build Now*</strong>. Клик по иконкам <strong>*Allure TestOps*</strong>и<strong>*Allure Report*</strong> позволяет перейти
 > на просмотр страниц с тестовой документацией и отчетов.
 </p>
 
