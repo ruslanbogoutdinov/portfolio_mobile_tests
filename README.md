@@ -60,12 +60,12 @@ gradle clean test -DdeviceHost=browserstack
 </p>
 
 <a id="allure"></a>
-## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> [Allure Report](https://) отчеты
+## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> Отчеты [Allure Report](https://)
 
 ### Тесты
 
 <p align="center">
-<img title="Allure Tests" src="media/screenshots/AllureTestsMobile.png">
+<img src="media/screenshots/AllureTestsMobile.png">
 </p>
 
 <a id="allure-testops"></a>
