@@ -45,9 +45,9 @@ public class SettingsTests extends TestBase{
     @Story("Настройка ленты")
     @Owner("ruslanbogoutdinov")
     @Severity(SeverityLevel.MINOR)
-    @DisplayName("Удаление выбранного языка при помощи лонг-тапа")
+    @DisplayName("Удаление выбранного языка")
     void deleteAddedLanguageWithLongTap() {
-        step("Добавляем язык и совершаем лонг-тап для подготовки к удалению", () -> {
+        step("Добавляем язык", () -> {
             moreFramePO.openMoreFrame();
             settingsPO.openSettingsPage()
                     .openAddLanguagePage()
