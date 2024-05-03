@@ -52,14 +52,14 @@ gradle clean test -DdeviceHost=browserstack
 > на просмотр страниц с тестовой документацией и отчетов.
 </p>
 
-<a id="allure"></a>
-## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> [Allure Report](https://) отчеты
-
 #### Значок Allure Report
 
 <p align="center">
 <img title="Allure Dashboard" src="src/test/resources/media/logos/AllureReportButton.svg">
 </p>
+
+<a id="allure"></a>
+## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> [Allure Report](https://) отчеты
 
 ### Тесты
 
