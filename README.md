@@ -10,13 +10,13 @@
 
 * <a href="#jenkins">Запуск тестов в Jenkins</a>
 
-* <a href="#allure">Allure Report отчеты</a>
+* <a href="#allure">Отчеты в Allure Report</a>
 
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
 
-* <a href="#telegram">Telegram уведомления</a>
+* <a href="#telegram">Telegram уведомление</a>
 
-* <a href="#video">Пример видео прогона автотеста</a>
+* <a href="#video">Видео пример прогона автотеста через BrowserStack</a>
 
 <a id="cases"></a>
 ##  Реализованные проверки
@@ -98,7 +98,7 @@ gradle clean test -DdeviceHost=browserstack
 </p>
 
 <a id="telegram"></a>
-## <img src="src/test/resources/media/logos/Telegram.svg" width="25" height="25"/></a> Telegram уведомления
+## <img src="src/test/resources/media/logos/Telegram.svg" width="25" height="25"/></a> Telegram уведомление
 
 #### Оповещение о результатах сборки
 
