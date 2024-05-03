@@ -98,10 +98,10 @@ gradle clean test -DdeviceHost=browserstack
 </p>
 
 <a id="telegram"></a>
-## <img src="media/logo/Telegram.svg" width="25" height="25"/></a> Telegram уведомления
+## <img src="src/test/resources/media/logos/Telegram.svg" width="25" height="25"/></a> Telegram уведомления
 
 <p >
-<img title="telegram bot" src="src/test/resources/media/logos/Telegram.svg">
+<img title="telegram bot" src="">
 </p>
 
 <a id="video"></a>
