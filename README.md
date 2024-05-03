@@ -45,17 +45,18 @@ gradle clean test -DdeviceHost=browserstack
 #### Главная страница Jenkins
 
 <p align="center">
-
 <a><img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/></a>
 
-> Для запуска сборки необходимо нажать <strong>*Build Now*</strong>. Клик по иконкам <strong>*Allure TestOps*</strong> и <strong>*Allure Report*</strong> позволяет перейти
-> на просмотр страниц с тестовой документацией и отчетов.
+> Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
 </p>
 
 #### Значки Allure Report и Allure TestOps
 
 <p align="center">
 <img src="src/test/resources/media/screenshots/AllureButtons.png" alt="Allure buttons in Jenkins">
+
+> Клик по иконкам <strong>*Allure TestOps*</strong> и <strong>*Allure Report*</strong> позволяет перейти
+> на просмотр страниц с тестовой документацией и отчетов.
 </p>
 
 <a id="allure"></a>
