@@ -52,10 +52,10 @@ gradle clean test -DdeviceHost=browserstack
 > на просмотр страниц с тестовой документацией и отчетов.
 </p>
 
-#### Значок Allure Report
+#### Значки Allure Report и Allure TestOps
 
 <p align="center">
-<img title="Allure Dashboard" src="src/test/resources/media/screenshots/AllureReportButton.png" alt="Allure Report button in Jenkins">
+<img src="src/test/resources/media/screenshots/AllureButtons.png" alt="Allure buttons in Jenkins">
 </p>
 
 <a id="allure"></a>
