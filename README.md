@@ -93,13 +93,6 @@ gradle clean test -DdeviceHost=browserstack
 <img title="Allure TestOps" src="media/screenshots/TOpsTestsMobile.png">
 </p>
 
-<a id="jira"></a>
-## <img src="media/logo/Jira.svg" width="25" height="25"/></a> Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-548)
-
-<p align="center">
-<img title="Jira" src="media/screenshots/jiraMobile.png">
-</p>
-
 <a id="telegram"></a>
 ## <img src="media/logo/Telegram.svg" width="25" height="25"/></a> Telegram уведомления
 
