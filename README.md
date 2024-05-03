@@ -46,9 +46,9 @@ gradle clean test -DdeviceHost=browserstack
 
 <p align="center">
 
-<a href="https://jenkins.autotests.cloud/job/AD_demo_mobile_wb/"><img src="media/screenshots/JenkinsMobile.png" alt="Jenkins"/></a>
+<a><img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/></a>
 
-> Для запуска сборки необходимо нажать "Собрать сейчас". Клик по иконкам Allure TestOps и Allure Report позволяет перейти
+> Для запуска сборки необходимо нажать "Build now". Клик по иконкам Allure TestOps и Allure Report позволяет перейти
 > на просмотр страниц с тестовой документацией и отчетов.
 </p>
 
