@@ -40,7 +40,7 @@ gradle clean test -DdeviceHost=browserstack
 ```
 
 <a id="jenkins"></a>
-## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/mobile_automation_portfolio/)
+## <img src="src/test/resources/media/logos/jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/mobile_automation_portfolio/)
 
 #### Главная страница Jenkins
 
@@ -53,12 +53,12 @@ gradle clean test -DdeviceHost=browserstack
 </p>
 
 <a id="allure"></a>
-## <img src="media/logo/Allure.svg" width="25" height="25"/></a> [Allure Report](https://jenkins.autotests.cloud/job/AD_demo_mobile_wb/4/allure/) отчеты
+## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> [Allure Report](https://) отчеты
 
 #### Значок Allure Report
 
 <p align="center">
-<img title="Allure Dashboard" src="media/screenshots/AllureMobile.png">
+<img title="Allure Dashboard" src="src/test/resources/media/logos/AllureReportButton.svg">
 </p>
 
 ### Тесты
