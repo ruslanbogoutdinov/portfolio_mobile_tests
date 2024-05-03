@@ -55,7 +55,7 @@ gradle clean test -DdeviceHost=browserstack
 #### Значок Allure Report
 
 <p align="center">
-<img title="Allure Dashboard" src="src/test/resources/media/logos/AllureReportButton.svg">
+<img title="Allure Dashboard" src="src/test/resources/media/screenshots/AllureReportButton.svg" alt="Allure Report button in Jenkins">
 </p>
 
 <a id="allure"></a>
