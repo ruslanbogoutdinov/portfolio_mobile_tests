@@ -81,14 +81,14 @@ gradle clean test -DdeviceHost=browserstack
 </p>
 
 <a id="allure-testops"></a>
-## <img src="media/logo/Allure_TO.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4186/dashboards)
+## <img src="src/test/resources/media/logos/AllureTestOps.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4186/dashboards)
 
 >Allure TestOps поддерживает подход <strong>*Test cases as a code*</strong>, что позволяет из кода поддерживать тестовую документацию в актуальном состоянии.
 
 #### Тест-кейсы
 
 <p align="center">
-<img title="Allure TestOps" src="media/screenshots/AllureTestOpsTests.png">
+<img title="Allure TestOps" src="src/test/resources/media/screenshots/AllureTestOpsTests.png">
 </p>
 
 <p align="center">
