@@ -101,7 +101,7 @@ gradle clean test -DdeviceHost=browserstack
 ## <img src="media/logo/Telegram.svg" width="25" height="25"/></a> Telegram уведомления
 
 <p >
-<img title="telegram bot" src="media/screenshots/mobileBot.png">
+<img title="telegram bot" src="src/test/resources/media/logos/Telegram.png">
 </p>
 
 <a id="video"></a>
