@@ -68,6 +68,12 @@ gradle clean test -DdeviceHost=browserstack
 <img src="src/test/resources/media/screenshots/AllureReportMain.png">
 </p>
 
+#### Тесты
+
+<p align="center">
+<img src="src/test/resources/media/screenshots/AllureTests.png">
+</p>
+
 <a id="allure-testops"></a>
 ## <img src="media/logo/Allure_TO.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/1910/dashboards)
 
