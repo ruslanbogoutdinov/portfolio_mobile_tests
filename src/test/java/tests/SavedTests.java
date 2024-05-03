@@ -20,7 +20,7 @@ public class SavedTests extends TestBase {
     @DisplayName("Проверка на корректное открытие раздела 'Saved' в нижнем боттом баре")
     void successfullyOpenSavedSection() {
         step("Открываем раздел 'Saved' и проверяем на корректное открытие данного раздела", () -> {
-            //savedPO.openSavedPage();
+            savedPO.openSavedPage();
             savedNavButtonState = savedPO.getSavedActiveBarItemNeededAttrState("selected");
 
             assertThat(savedNavButtonState).isEqualTo("true");

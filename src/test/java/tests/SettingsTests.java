@@ -21,7 +21,7 @@ public class SettingsTests extends TestBase{
     @DisplayName("Добавление нового языка в набор языков")
     void addLanguageTest() {
         step("Открываем фрейм 'Ещё'", () -> {
-            //moreFramePO.openMoreFrame();
+            moreFramePO.openMoreFrame();
         });
 
         step("Кликаем по кнопке настроек", () -> {
@@ -48,7 +48,7 @@ public class SettingsTests extends TestBase{
     @DisplayName("Удаление выбранного языка при помощи лонг-тапа")
     void deleteAddedLanguageWithLongTap() {
         step("Добавляем язык и совершаем лонг-тап для подготовки к удалению", () -> {
-            //moreFramePO.openMoreFrame();
+            moreFramePO.openMoreFrame();
             settingsPO.openSettingsPage()
                     .openAddLanguagePage()
                     .chooseNeededLanguage(languageItemOnRussian);
