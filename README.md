@@ -77,7 +77,7 @@ gradle clean test -DdeviceHost=browserstack
 #### Графики
 
 <p align="center">
-<img src="src/test/resources/media/screenshots/AllureGraphs.png" width="800">
+<img src="src/test/resources/media/screenshots/AllureGraphss.png" width="800">
 </p>
 
 <a id="allure-testops"></a>
