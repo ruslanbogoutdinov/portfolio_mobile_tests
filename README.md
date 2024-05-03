@@ -30,13 +30,13 @@
 ### Локальный запуск тестов
 
 ```
-gradle clean test "-DdeviceHost=local"
+gradle clean test -DdeviceHost=local
 ```
 
 ### Удаленный запуск тестов
 
 ```
-gradle clean test "-DdeviceHost=browserstack" 
+gradle clean test -DdeviceHost=browserstack
 ```
 
 <a id="jenkins"></a>
