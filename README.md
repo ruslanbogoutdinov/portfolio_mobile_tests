@@ -40,7 +40,7 @@ gradle clean test -DdeviceHost=browserstack
 ```
 
 <a id="jenkins"></a>
-## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/AD_demo_mobile_wb/)
+## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/mobile_automation_portfolio/)
 
 <p align="center">
 
