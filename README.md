@@ -50,6 +50,7 @@ gradle clean test -DdeviceHost=browserstack
 > Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
 </p>
 
+<a id="allure_report_and_allure_testops"></a>
 #### Значки Allure Report и Allure TestOps
 
 <p align="center">
@@ -68,7 +69,7 @@ gradle clean test -DdeviceHost=browserstack
 <img title="Allure Report overview" src="src/test/resources/media/screenshots/AllureReportMain.png" alt="Allure Report overview">
 
 > Ссылка на отчеты выше может не работать. Для того, чтобы увидеть свежую информацию о прогоне тестов,
-> стоит открыть отчет последнего тестового прогона вручную, как показано в разделе выше <strong>*Значки Allure Report и Allure TestOps*</strong>.
+> стоит открыть отчет последнего тестового прогона вручную, как показано в разделе <a href="#allure_report_and_allure_testops">Значки Allure Report и Allure TestOps</a>.
 </p>
 
 #### Тесты
