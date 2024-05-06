@@ -103,12 +103,12 @@ gradle clean test -DdeviceHost=browserstack
 #### Оповещение о результатах сборки
 
 <p>
-<img title="Telegram notification" src="src/test/resources/media/screenshots/Telegram.png" width="400" alt="Telegram notification">
+<img title="Telegram notification" src="src/test/resources/media/screenshots/Telegram.png" width="500" alt="Telegram notification">
 </p>
 
 <a id="video"></a>
 ## <img src="src/test/resources/media/logos/Browserstack.svg" width="25" height="25"/></a> Видео пример прогона автотеста через BrowserStack
 
 <p align="center">
-<img title="Browserstack video" src="src/test/resources/media/video/BrowserStackTestVideo.gif" alt="Browserstack video">
+<img title="Browserstack video" src="src/test/resources/media/video/BrowserStackTestVideo.gif" width="500" alt="Browserstack video">
 </p>
