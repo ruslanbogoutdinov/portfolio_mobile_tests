@@ -10,13 +10,13 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class SettingsPO {
     UniversalActionsComponent universalActionsComponent = new UniversalActionsComponent();
-    private static final SelenideElement
+    private final SelenideElement
         settingsButtonInMoreFrame = $(AppiumBy.id("org.wikipedia.alpha:id/main_drawer_settings_container")),
         backButton = $(AppiumBy.accessibilityId("Navigate up")),
         deleteButton = $(AppiumBy.id("org.wikipedia.alpha:id/menu_delete_selected")),
         moreOptionsButton = $(AppiumBy.accessibilityId("More options"));
 
-    private static final ElementsCollection
+    private final ElementsCollection
             listOfAddedLanguages = $$(AppiumBy.id("org.wikipedia.alpha:id/wiki_language_checkbox"));
 
 

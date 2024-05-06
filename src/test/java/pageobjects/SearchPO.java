@@ -9,11 +9,11 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class SearchPO {
-    private static final SelenideElement
+    private final SelenideElement
         searchField = $(AppiumBy.accessibilityId("Search Wikipedia")),
         searchFieldAfterClick = $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text"));
 
-    private static final ElementsCollection
+    private final ElementsCollection
             searchFoundItemList = $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title"));
 
     public SearchPO enterValueIntoSearchField(String value){

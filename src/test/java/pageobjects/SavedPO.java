@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class SavedPO {
     BottomBarComponent bottomBarComponent = new BottomBarComponent();
-    private static final SelenideElement
+    private final SelenideElement
         moreOptions = $(AppiumBy.accessibilityId("More options")),
         moreOptionsContainer = $(AppiumBy.id("org.wikipedia.alpha:id/reading_lists_overflow_card_container")),
         moreOptionsCreateNewListItem = $(AppiumBy.id("org.wikipedia.alpha:id/reading_lists_overflow_create_new_list")),
