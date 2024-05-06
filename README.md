@@ -67,7 +67,7 @@ gradle clean test -DdeviceHost=browserstack
 <p align="center">
 <img title="Allure Report overview" src="src/test/resources/media/screenshots/AllureReportMain.png" alt="Allure Report overview">
 
-> Ссылка выше на отчеты может не работать. Чтобы увидеть свежую информацию о прогоне тестов,
+> Ссылка на отчеты выше может не работать. Для того, чтобы увидеть свежую информацию о прогоне тестов,
 > стоит открыть отчет последнего тестового прогона вручную, как показано в разделе выше <strong>*Значки Allure Report и Allure TestOps*</strong>.
 </p>
 
