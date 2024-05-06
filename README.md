@@ -67,8 +67,8 @@ gradle clean test -DdeviceHost=browserstack
 <p align="center">
 <img title="Allure Report overview" src="src/test/resources/media/screenshots/AllureReportMain.png" alt="Allure Report overview">
 
-> Результаты прогона тестов в <strong>*Allure Reports*</strong> хранятся 24 часа. Чтобы увидеть свежую информацию о прогоне тестов,
-> стоит открыть отчет последнего тестового прогона вручную как показано в разделе выше <strong>*Значки Allure Report и Allure TestOps*</strong>.
+> Ссылка выше на отчеты может не работать. Чтобы увидеть свежую информацию о прогоне тестов,
+> стоит открыть отчет последнего тестового прогона вручную, как показано в разделе выше <strong>*Значки Allure Report и Allure TestOps*</strong>.
 </p>
 
 #### Тесты
