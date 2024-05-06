@@ -103,7 +103,7 @@ gradle clean test -DdeviceHost=browserstack
 #### Оповещение о результатах сборки
 
 <p>
-<img title="Telegram notification" src="src/test/resources/media/screenshots/Telegram.png" alt="Telegram notification">
+<img title="Telegram notification" src="src/test/resources/media/screenshots/Telegram.png" width="400" alt="Telegram notification">
 </p>
 
 <a id="video"></a>
