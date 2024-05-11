@@ -10,7 +10,7 @@
 
 * <a href="#jenkins">Запуск тестов в Jenkins</a>
 
-* <a href="#allure">Отчеты в Allure Report</a>
+* <a href="#allure">Отчет в Allure Report</a>
 
 * <a href="#allure-testops">Интеграция с Allure TestOps</a>
 
@@ -70,15 +70,12 @@ gradle clean test -DdeviceHost=browserstack -Dos_version=12.0
 </p>
 
 <a id="allure"></a>
-## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> Отчеты в [Allure Report](https://jenkins.autotests.cloud/job/mobile_automation_portfolio/allure/)
+## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> Отчет в [Allure Report](https://jenkins.autotests.cloud/job/mobile_automation_portfolio/allure/)
 
 #### Главная страница Allure Report
 
 <p align="center">
 <img title="Allure Report overview" src="src/test/resources/media/screenshots/AllureReportMain.png" alt="Allure Report overview">
-
-> Ссылка на отчеты выше может не работать. Для того, чтобы увидеть свежую информацию о прогоне тестов,
-> стоит открыть отчет последнего тестового прогона вручную, как показано в разделе <a href="#allure_report_and_allure_testops">Значки Allure Report и Allure TestOps</a>.
 </p>
 
 #### Тесты
