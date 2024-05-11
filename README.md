@@ -45,6 +45,7 @@ gradle clean test -DdeviceHost=browserstack -Dos_version=12.0
 ### Параметры запуска
 
 <code>deviceHost</code> – хост (локальный / удаленный), на котором будут запускаться тесты (_по умолчанию - <code>browserstack</code>_).
+
 <code>os_version</code> – версия платформы девайса, на котором предпологается запуск тестов (_по умолчанию - <code>12.0</code>_).
 
 <a id="jenkins"></a>
