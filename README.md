@@ -33,18 +33,19 @@
 ### Локальный запуск тестов
 
 ```bash
-gradle clean test -DdeviceHost=local
+gradle clean test -DdeviceHost=local -Dos_version=12.0
 ```
 
 ### Удаленный запуск тестов
 
 ```bash
-gradle clean test -DdeviceHost=browserstack
+gradle clean test -DdeviceHost=browserstack -Dos_version=12.0
 ```
 
 ### Параметры запуска
 
-<code>deviceHost</code> – хост (локальный / удаленный), на котором будут запускаться тесты.
+<code>deviceHost</code> – хост (локальный / удаленный), на котором будут запускаться тесты (_по умолчанию - <code>browserstack</code>_).
+<code>os_version</code> – версия платформы девайса, на котором предпологается запуск тестов (_по умолчанию - <code>12.0</code>_).
 
 <a id="jenkins"></a>
 ## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/mobile_automation_portfolio/)
