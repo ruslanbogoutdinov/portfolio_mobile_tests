@@ -57,7 +57,7 @@ gradle clean test -DdeviceHost=browserstack -Dos_version=12.0
 <img title="Jenkins" src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/>
 </p>
 
-> Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
+> Для запуска сборки необходимо нажать <code><strong>*Build Now*</strong></code>.
 
 <a id="allure_report_and_allure_testops"></a>
 #### Значки Allure Report и Allure TestOps
@@ -65,7 +65,7 @@ gradle clean test -DdeviceHost=browserstack -Dos_version=12.0
 <p align="center">
 <img title="Allure buttons in Jenkins" src="src/test/resources/media/screenshots/AllureButtons.png" alt="Allure buttons in Jenkins">
 
-> Клик по иконкам <strong>*Allure TestOps*</strong> и <strong>*Allure Report*</strong> позволяет перейти
+> Клик по иконкам <code><strong>*Allure TestOps*</strong></code> и <code><strong>*Allure Report*</strong></code> позволяет перейти
 > на просмотр страниц с тестовой документацией и отчетов.
 </p>
 
@@ -93,7 +93,7 @@ gradle clean test -DdeviceHost=browserstack -Dos_version=12.0
 <a id="allure-testops"></a>
 ## <img src="src/test/resources/media/logos/AllureTestOps.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4186/dashboards)
 
->Allure TestOps поддерживает подход <strong>*Test cases as a code*</strong>, что позволяет из кода поддерживать тестовую документацию в актуальном состоянии.
+>Allure TestOps поддерживает подход <code><strong>*Test cases as a code*</strong></code>, что позволяет из кода поддерживать тестовую документацию в актуальном состоянии.
 
 #### Тест-кейсы
 
