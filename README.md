@@ -32,15 +32,19 @@
 ##  Запуск тестов из терминала
 ### Локальный запуск тестов
 
-```
+```bash
 gradle clean test -DdeviceHost=local
 ```
 
 ### Удаленный запуск тестов
 
-```
+```bash
 gradle clean test -DdeviceHost=browserstack
 ```
+
+### Параметры запуска
+
+<code>deviceHost</code> – хост (локальный / удаленный), на котором будут запускаться тесты.
 
 <a id="jenkins"></a>
 ## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/mobile_automation_portfolio/)
@@ -49,9 +53,9 @@ gradle clean test -DdeviceHost=browserstack
 
 <p align="center">
 <img title="Jenkins" src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins"/>
+</p>
 
 > Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
-</p>
 
 <a id="allure_report_and_allure_testops"></a>
 #### Значки Allure Report и Allure TestOps
