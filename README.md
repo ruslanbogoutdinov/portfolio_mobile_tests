@@ -93,7 +93,11 @@ gradle clean test -DdeviceHost=browserstack -Dos_version=12.0
 <a id="allure-testops"></a>
 ## <img src="src/test/resources/media/logos/AllureTestOps.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4186/dashboards)
 
->Allure TestOps поддерживает подход <code><strong>*Test cases as a code*</strong></code>, что позволяет из кода поддерживать тестовую документацию в актуальном состоянии.
+> Allure TestOps поддерживает подход <code><strong>*Test cases as a code*</strong></code>, что позволяет из кода поддерживать тестовую документацию в актуальном состоянии.
+
+> В <code><strong>*Allure TestOps*</strong></code> есть возможность наблюдать за выполнением тестов в реальном времени.
+
+> Данные для входа в <code><strong>*Allure TestOps*</strong></code>: <code><strong>*username:*</strong></code>allure8 <code><strong>*password:*</strong></code>allure8
 
 #### Тест-кейсы
 
