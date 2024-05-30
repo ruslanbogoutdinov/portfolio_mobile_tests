@@ -4,11 +4,11 @@ import org.aeonbits.owner.Config;
 
 public interface BrowserstackConfig extends Config {
     @Key("browserstack.user")
-    @DefaultValue("bogoutdinovrusla_7sHrJu")
+    @DefaultValue("ENTER_YOUR_BROWSERSTACK_USER")
     String getBrowserstackUser();
 
     @Key("browserstack.key")
-    @DefaultValue("MK8szVrvtqekwjtZvbT1")
+    @DefaultValue("ENTER_YOUR_BROWSERSTACK_KEY")
     String getBrowserstackKey();
 
     @Key("remoteURL")
@@ -28,7 +28,7 @@ public interface BrowserstackConfig extends Config {
     String getOSVersion();
 
     @Key("project")
-    @DefaultValue("First Java Project")
+    @DefaultValue("BrowserStack Java Project")
     String getProjectName();
 
     @Key("build")
@@ -36,6 +36,6 @@ public interface BrowserstackConfig extends Config {
     String getBuildName();
 
     @Key("name")
-    @DefaultValue("first_test")
+    @DefaultValue("simple_test")
     String getName();
 }
